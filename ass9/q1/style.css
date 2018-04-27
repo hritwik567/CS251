@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=Amatic+SC|Crimson+Text|Open+Sans';
+body {
+    z-index:500;
+    max-width: 960px;
+    font-family: 'Crimson Text';
+    margin: 0 auto;
+}
+
+header h1, h3 {
+    font-family: 'Amatic SC', sans;
+}
+header h1 {
+    font-size: 3em;
+    text-align:center;
+}
+h3 {
+    font-size: 1.5em;
+}
+main section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+main section div {
+    color:white;
+    background-color:black;
+    margin: 0.5em;
+    padding: 1em;
+}
+#contact-details ul {
+    list-style:none;
+    padding: 0px;
+}
+#contact-details ul li {
+    padding:0.5em;
+    padding-left: 30px;
+}
+a {
+    color: #0095dd;
+    text-decoration:none;
+}
+a:hover {
+    color:white;
+    background-color: #0095dd;
+}
+
+
+aside {
+    display:none;
+}
+
+@media only screen and (min-width:960px) {
+    header h1 {
+	text-align:left;
+    }
+    main section {
+	flex-flow: row nowrap;
+    }
+    main section div{
+	width: 28%;
+	padding: 2%
+    }
+    aside {
+	display:block;
+	font-family: monospace;
+	position: absolute;
+	bottom:0px;
+	right:0px;
+    }
+    aside a {
+	color:blue;
+    }
+}

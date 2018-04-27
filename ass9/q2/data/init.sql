@@ -1,0 +1,19 @@
+CREATE DATABASE IF NOT EXISTS test;
+
+use test;
+
+CREATE TABLE IF NOT EXISTS registerations (
+	name VARCHAR(20) NOT NULL,
+	address VARCHAR(100) NOT NULL,
+	email VARCHAR(50) NOT NULL PRIMARY KEY,
+	mnumber VARCHAR(10) NOT NULL,
+	bnumber VARCHAR(5) NOT NULL,
+  bpass VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS admin (
+	uname VARCHAR(20) NOT NULL PRIMARY KEY,
+  upass VARCHAR(20) NOT NULL
+);
+
+INSERT IGNORE INTO admin (uname, upass) VALUES ('admin', 'admin');

@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS bankac (
+	balance INT(10) NOT NULL,
+	bnumber VARCHAR(5) NOT NULL PRIMARY KEY,
+  bpass VARCHAR(20) NOT NULL
+);

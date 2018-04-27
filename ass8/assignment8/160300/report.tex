@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\title{Report}
+\author{Hritvik Taneja}
+\date{}
+\begin{document}
+\maketitle
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sc1.eps}
+    \caption{Scatter Plot for 1 Thread}
+    \label{fig:sc1}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sc2.eps}
+    \caption{Scatter Plot for 2 Threads}
+    \label{fig:sc2}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sc4.eps}
+    \caption{Scatter Plot for 4 Threads}
+    \label{fig:sc4}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sc8.eps}
+    \caption{Scatter Plot for 8 Threads}
+    \label{fig:sc8}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{sc16.eps}
+    \caption{Scatter Plot for 16 Threads}
+    \label{fig:sc16}
+\end{figure}
+
+Figure 1, 2, 3, 4, 5 show the scatter plots for threads equal to 1,2,4,8,16 respectively.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{lineplot.eps}
+    \caption{Line plot for all threads}
+    \label{fig:lp}
+\end{figure}
+Figure 6 shows the line plot of the average time for each thread
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{speedplot.eps}
+    \caption{Bar Graph for speedup for all threads}
+    \label{fig:sp}
+\end{figure}
+
+Figure 7 shows the speedup of average time for each configuration
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{errorplot.eps}
+    \caption{Error in speedup for all threads}
+    \label{fig:ep}
+\end{figure}
+
+Figure 8 shows the variance of speedup time for each configuration along with speedup bars
+\end{document}
